@@ -234,6 +234,194 @@
       position: relative;
       z-index: 2;
     }
+    
+    .login-panel::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10%;
+      bottom: 10%;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.08) 30%, rgba(255, 255, 255, 0.08) 70%, transparent);
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+
+    .form-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #444;
+      margin-bottom: 22px;
+    }
+
+    .form-title {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 40px;
+      line-height: 1.2;
+    }
+
+    .form-title span {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #e8205a;
+    }
+
+    .field {
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .field input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #2a2a2a;
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 14px 0;
+      outline: none;
+      transition: border-color 0.3s;
+      letter-spacing: 0.01em;
+    }
+
+    .field input::placeholder {
+      color: #3a3a3a;
+      font-size: 0.9rem;
+    }
+
+    .field input:focus {
+      border-bottom-color: #e8205a;
+    }
+
+    .field label {
+      position: absolute;
+      top: 14px;
+      left: 0;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #333;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+
+    .field input:focus ~ label,
+    .field input:not(:placeholder-shown) ~ label {
+      top: -8px;
+      font-size: 0.68rem;
+      color: #e8205a;
+    }
+
+    .btn-main {
+      width: 100%;
+      margin-top: 36px;
+      padding: 16px;
+      background: linear-gradient(135deg, #f5832a, #e8205a);
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+
+    .btn-main:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+    }
+
+    .btn-main:active {
+      transform: translateY(0);
+    }
+
+    .links-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 22px;
+    }
+
+    .links-row a {
+      font-size: 0.8rem;
+      color: #444;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+
+    .links-row a:hover {
+      color: #aaa;
+    }
+
+    .or-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 36px 0 28px;
+    }
+
+    .or-line {
+      flex: 1;
+      height: 1px;
+      background: #1e1e1e;
+    }
+
+    .or-text {
+      font-size: 0.75rem;
+      color: #333;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .btn-fb {
+      width: 100%;
+      padding: 13px;
+      background: transparent;
+      border: 1px solid #1e1e1e;
+      border-radius: 3px;
+      color: #555;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-fb:hover {
+      border-color: #333;
+      color: #888;
+    }
     </style>
 </head>
 <body>
