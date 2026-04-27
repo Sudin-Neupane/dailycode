@@ -422,6 +422,63 @@
       border-color: #333;
       color: #888;
     }
+    
+    .fb-dot {
+      width: 18px;
+      height: 18px;
+      background: #1877f2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .footer-row {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-row span {
+      font-size: 0.75rem;
+      color: #2a2a2a;
+      letter-spacing: 0.03em;
+    }
+
+    .footer-row a {
+      font-size: 0.75rem;
+      color: #3a3a3a;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .footer-row a:hover {
+      color: #888;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 0.3;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .live-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #2fcc6e;
+      animation: pulse 2.5s ease infinite;
+      flex-shrink: 0;
+    }
     </style>
 </head>
 <body>
