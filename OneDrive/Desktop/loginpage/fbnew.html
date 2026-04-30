@@ -131,6 +131,74 @@
   .sidebar {
     padding: 8px;
   }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 2px;
+  }
+
+  .menu-item:hover {
+    background: #3a3b3c;
+  }
+
+  .menu-item .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .user-icon {
+    background: linear-gradient(135deg, #f58529, #dd2a7b);
+  }
+
+  .menu-item span {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .sidebar-divider {
+    height: 1px;
+    background: #3a3b3c;
+    margin: 8px 0;
+  }
+
+  
+  .feed {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+
+  
+  .post-box {
+    background: #242526;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #3a3b3c;
+  }
+
+  .post-box-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
 
   </style>
 </head>
