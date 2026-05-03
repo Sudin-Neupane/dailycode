@@ -4,6 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #0d0c0a;
+  --cream: #f2ede6;
+  --rust: #c94b1e;
+  --mist: #d8cfc3;
+  --char: #141412;
+  --D: 'DM Serif Display', serif;
+  --U: 'Syne', sans-serif;
+  --M: 'Space Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--U);
+  cursor: none;
+  overflow-x: hidden;
+}
+
+/* CURSOR */
+#cur {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--rust);
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width .2s, height .2s, border-radius .2s;
+  mix-blend-mode: multiply;
+}
+
+#cur.lg {
+  width: 64px;
+  height: 64px;
+  margin: -27px 0 0 -27px;
+}
+
+#cur.im {
+  width: 280px;
+  height: 190px;
+  border-radius: 3px;
+  margin: -95px 0 0 -140px;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: normal;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  z-index: 600;
+  background: rgba(242, 237, 230, .9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(13, 12, 10, .1);
+}
+
+.nl {
+  font-family: var(--M);
+  font-size: 13px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.nls {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nls a {
+  font-family: var(--M);
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  position: relative;
+}
+
+    </style>
 </head>
 <body>
     
