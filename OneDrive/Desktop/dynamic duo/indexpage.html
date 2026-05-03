@@ -161,6 +161,28 @@
     <p class="nd">Recognition from Cannes Lions, D&amp;AD, and the Webby Awards.</p>
   </div>
 </div>
+<script>
+/* CURSOR */
+const cur = document.getElementById('cur');
+document.addEventListener('mousemove', e => {
+  cur.style.transform = `translate(${e.clientX-5}px,${e.clientY-5}px)`;
+});
+document.querySelectorAll('a,.bc,.tc,.pc,.fc,.nc').forEach(el => {
+  el.addEventListener('mouseenter',()=>cur.classList.add('lg'));
+  el.addEventListener('mouseleave',()=>cur.classList.remove('lg'));
+});
 
+/* OVERLAYS */
+document.querySelectorAll('[data-ov]').forEach(el=>{
+  el.addEventListener('mouseenter',()=>document.getElementById(el.dataset.ov).classList.add('on'));
+  el.addEventListener('mouseleave',()=>document.getElementById(el.dataset.ov).classList.remove('on'));
+});
+
+/* SCROLL REVEAL */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});
+},{threshold:0.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
