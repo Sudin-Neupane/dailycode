@@ -196,6 +196,54 @@ nav {
   position: relative;
 }
 
+.h-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.htag {
+  font-family: var(--M);
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.hhl {
+  font-family: var(--D);
+  font-size: clamp(68px, 11vw, 168px);
+  line-height: .86;
+  font-weight: 400;
+  margin: 28px 0 0;
+  z-index: 2;
+  position: relative;
+}
+
+.hhl em {
+  font-style: italic;
+  color: var(--rust);
+}
+
+.hhl .himg {
+  display: inline-block;
+  width: clamp(100px, 10vw, 170px);
+  height: clamp(60px, 6.5vw, 105px);
+  object-fit: cover;
+  vertical-align: middle;
+  margin: 0 10px;
+  border-radius: 3px;
+  transform: rotate(-2.5deg);
+  filter: contrast(1.1) saturate(.9);
+}
+
+.h-bot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid var(--mist);
+  margin-top: 44px;
+}
+
 
 
 
