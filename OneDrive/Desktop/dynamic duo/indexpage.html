@@ -438,6 +438,75 @@ nav {
 }
 
 
+.btn {
+  display: inline-block;
+  font-family: var(--M);
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 13px 30px;
+  text-decoration: none;
+  transition: background .25s;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  background: var(--rust);
+}
+
+/* ── BENTO WORK ── */
+#work {
+  padding: 80px 48px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.sh {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--mist);
+}
+
+.st {
+  font-family: var(--D);
+  font-size: clamp(30px, 3.8vw, 52px);
+  font-weight: 400;
+}
+
+.sm {
+  font-family: var(--M);
+  font-size: 10px;
+  letter-spacing: .18em;
+  color: #999;
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(110px, auto);
+  gap: 5px;
+}
+
+.bc {
+  background: var(--char);
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+
+.bc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .7;
+  transition: opacity .5s, transform .6s;
+  filter: grayscale(25%);
+}
+
 
 
 
