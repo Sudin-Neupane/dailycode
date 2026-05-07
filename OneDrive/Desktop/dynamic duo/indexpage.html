@@ -631,6 +631,128 @@ nav {
 
 
 
+.bc:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+.bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .78));
+  transform: translateY(6px);
+  transition: transform .3s;
+}
+
+.bc:hover .bl {
+  transform: translateY(0);
+}
+
+.bl h3 {
+  font-family: var(--D);
+  font-size: 19px;
+  color: var(--cream);
+  font-weight: 400;
+}
+
+.bl span {
+  font-family: var(--M);
+  font-size: 8px;
+  letter-spacing: .13em;
+  color: #bbb;
+}
+
+.btag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-family: var(--M);
+  font-size: 7px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  background: var(--rust);
+  color: var(--cream);
+  padding: 4px 9px;
+  border-radius: 20px;
+}
+
+.b1 {
+  grid-column: span 7;
+  grid-row: span 3;
+}
+
+.b2 {
+  grid-column: span 5;
+  grid-row: span 2;
+}
+
+.b3 {
+  grid-column: span 5;
+  grid-row: span 1;
+  min-height: 130px;
+}
+
+.b4 {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.b5 {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+.b6 {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
+/* ── NUMBERS ── */
+#nums {
+  background: var(--char);
+  padding: 70px 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nc {
+  padding: 0 36px 0 0;
+  border-right: 1px solid #222;
+}
+
+.nc:first-child {
+  padding-left: 0;
+}
+
+.nc:last-child {
+  border-right: none;
+}
+
+.nv {
+  font-family: var(--D);
+  font-size: clamp(44px, 5vw, 78px);
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1;
+}
+
+.nv span {
+  color: var(--rust);
+}
+
+.nl2 {
+  font-family: var(--M);
+  font-size: 8px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #555;
+  margin-top: 6px;
+}
+
 
 
 
