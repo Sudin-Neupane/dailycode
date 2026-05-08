@@ -753,6 +753,82 @@ nav {
   margin-top: 6px;
 }
 
+  font-family: var(--D);
+  font-size: clamp(22px, 2.8vw, 40px);
+  color: var(--cream);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pb a {
+  font-family: var(--M);
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--cream);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .35);
+  padding-bottom: 2px;
+}
+
+/* MARQUEE BREAK */
+.mqb {
+  background: var(--cream);
+  overflow: hidden;
+  padding: 18px 0;
+  border-top: 1px solid var(--mist);
+  border-bottom: 1px solid var(--mist);
+}
+
+.mqbi {
+  display: flex;
+  white-space: nowrap;
+  animation: ms 20s linear infinite;
+}
+
+.mqbi span {
+  font-family: var(--D);
+  font-size: 38px;
+  color: var(--ink);
+  padding: 0 32px;
+  font-style: italic;
+}
+
+.mqbi b {
+  color: var(--rust);
+  font-weight: 400;
+}
+
+/* ── CAPABILITIES ── */
+#features {
+  padding: 80px 48px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.fl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 36px;
+}
+
+.fc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 38px;
+  border: 1px solid var(--mist);
+  position: relative;
+  overflow: hidden;
+  min-height: 240px;
+  transition: border-color .3s;
+}
+
+.fc:hover {
+  border-color: var(--rust);
+}
+
+
 
 
 
